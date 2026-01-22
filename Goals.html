@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cover Letter - Kevin R Greene</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<header>
-    <h1 id="goals-title">Future Goals - Kevin R Greene</h1>
-    <h3>Future Software Developer</h3>
-    <h4>Contact Information:</h4>
-    <span>2109 James White Dr, El Paso, TX | (915)-336-5565 |</span>
-    <nav>
-        <ul>
-            <li><a href="index.html">Resume</a></li>
-            <li><a href="coverletter.html">Cover Letter</a></li>
-            <li><a href="Goals.html">Goals</a></li>
-        </ul>
-    </nav>
-<body>
-    <video id="background-video" autoplay muted loop playsinline>
-            <source src="freestock  chicago.mp4" type="video/mp4">
-        </video>
-    <Table id="goals" class="table">
-        <caption><strong>Future Goals:</strong></caption>
-        <tr>
-            <td>Build a strong portfolio of projects.</td>
-            <td>Secure a position as a software developer in a reputable company.</td>
-            <td>Complete my MASTER’S degree in software Engineering</td>
-        </tr>
-        <tr>
-            <td>Gain proficiency in multiple programming languages and frameworks.</td>
-            <td>Contribute to open-source projects to enhance my skills and network.</td>
-            <td>Attend industry conferences and workshops to stay updated with the latest trends.</td>
-        </tr>
-        <tr>
-            <td>Develop soft skills such as teamwork, communication, and leadership.</td>
-            <td>Obtain relevant certifications to validate my expertise.</td>
-            <td>Build a professional network through internships and collaborations.</td>
-        </tr>
-    </Table>
-    <form id="Contact">
-        <h2>Contact Me</h2>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-    <footer>
-        <p>&copy; 2026 Kevin R Greene</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cover Letter - Kevin R Greene</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <audio id="backgroundmusic" controls autoplay loop>
+        <source src="ES_Bourbon Mist - Jobii.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+        <h1 id="goals-title">Future Goals - Kevin R Greene</h1>
+        <h3>Future Software Developer</h3>
+        <h4>Contact Information:</h4>
+        <span>2109 James White Dr, El Paso, TX | (915)-336-5565 |</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="coverletter.html">Cover Letter</a></li>
+                <li><a href="Goals.html">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <body>
+            <video id="background-video" autoplay muted loop playsinline>
+                <source src="freestock  chicago.mp4" type="video/mp4">
+            </video>
+            <Table id="goals" class="table">
+                <caption><strong>Future Goals:</strong></caption>
+                <tr>
+                    <td>Build a strong portfolio of projects.</td>
+                    <td>Secure a position as a software developer in a reputable company.</td>
+                    <td>Complete my MASTER’S degree in software Engineering</td>
+                </tr>
+                <tr>
+                    <td>Gain proficiency in multiple programming languages and frameworks.</td>
+                    <td>Contribute to open-source projects to enhance my skills and network.</td>
+                    <td>Attend industry conferences and workshops to stay updated with the latest trends.</td>
+                </tr>
+                <tr>
+                    <td>Develop soft skills such as teamwork, communication, and leadership.</td>
+                    <td>Obtain relevant certifications to validate my expertise.</td>
+                    <td>Build a professional network through internships and collaborations.</td>
+                </tr>
+            </Table>
+            <form id="Contact" method="post" action="submit_form.php">
+                <h2>Contact Me</h2>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="company">Company</label><br>
+                <input type="text" id="company" name="company"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Submit">
+                <label for="contact-method">What is the best way to contact you?</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone" checked>
+                <label for="contact-phone">Phone</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="contact-email">Email</label>
+                <label for="contact-time">Preferred contact time:</label>
+                <select id="contact-time" name="contact-time">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </form>
+            <footer>
+                <p>&copy; 2026 Kevin R Greene</p>
+            </footer>
+        </body>
+    </main>
+</html>
