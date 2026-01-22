@@ -15,13 +15,24 @@
 html{
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: orangered;
+    background: url('freestock chicago.mp4');
+    background-size: cover;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     animation: fadeIn 2s ease-in;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: grayscale(100%);
 }
 
 nav ul li {
@@ -37,10 +48,42 @@ nav ul li {
 #letter {
     background-color: white;
     padding: 20px;
-    margin-left: 275px;
+    margin-left: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 600px;
     animation: slideIn 1s ease-out;
     line-height: 1.6;
-    font-size: 18px;}
+    font-size: 18px;
+    float: right
+}
+
+article {
+    background-color: gray;
+    padding: 20px;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    animation: slideIn 1s ease-out;
+    line-height: 1.6;
+    font-size: 18px;
+    float: left;
+}
+
+footer {
+    text-align: center;
+    margin-top: 800px;
+    font-size: 14px;
+    color: white;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in;
+}
