@@ -59,16 +59,16 @@
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
                 <input type="submit" value="Submit">
-                <label for="contact-method">What is the best way to contact you?</label>
-                <input type="radio" id="contact-phone" name="contact-method" value="phone" checked>
-                <label for="contact-phone">Phone</label>
-                <input type="radio" id="contact-email" name="contact-method" value="email">
-                <label for="contact-email">Email</label>
-                <label for="contact-time">Preferred contact time:</label>
-                <select id="contact-time" name="contact-time">
-                    <option value="morning">Morning</option>
-                    <option value="afternoon">Afternoon</option>
-                    <option value="evening">Evening</option>
+                <label for="contact-method">What is the best time to contact you?</label>
+                <input type="radio" id="time-Morning" name="time-Morning" value="Morning" checked>
+                <label for="contact-phone">Morning</label>
+                <input type="radio" id="time-Afternoon" name="time-Afternoon" value="Afternoon">
+                <label for="contact-email">Afternoon</label><br>
+                <label for="contact-time">Preferred method of contact:</label>
+                <select id="methodOfContact" name="methodOfContact">
+                    <option value="Phone">Phone</option>
+                    <option value="email">email</option>
+                    <option value="TextOrSMS">Text Or SMS</option>
                 </select>
             </form>
             <footer>
